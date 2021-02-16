@@ -1,0 +1,30 @@
+.large-hero {
+	color: purple;
+	position: relative;
+
+
+	&__text-content {
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 1.1rem;
+
+		@mixin atSmall {
+			font-size: 2.0rem;
+		}
+		@mixin atMedium {
+			font-size: 3.2rem;
+		}
+		@mixin atLarge {
+			font-size: 4.8rem;
+		}
+	}
+}
